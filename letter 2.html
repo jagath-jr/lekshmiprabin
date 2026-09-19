@@ -443,9 +443,15 @@
   .divider svg { width: 26px; height: 26px; flex-shrink: 0; }
 
   /* ---------- Invitation Card ---------- */
-  .invite {
+ .invite {
     text-align: center;
-    background: #FFFDF9;
+    
+    /* Adds a background image with an 85% opaque ivory overlay for text readability */
+    background: linear-gradient(rgba(255, 253, 249, 0.862), rgba(255, 253, 249, 0.922)), url('image/bgimage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     border-radius: 12px;
     padding: 60px 24px;
     border: 1px solid rgba(197,154,63,0.3);
@@ -475,7 +481,7 @@
     margin-bottom: 8px;
   }
   .invite .who {
-    margin: 22px 0;
+    margin: 10px 0;
   }
   .invite .who .name {
     font-family: 'Marcellus', serif;
@@ -501,7 +507,7 @@
     letter-spacing: 0.35em;
     font-size: 13px;
     color: var(--gold);
-    margin: 20px 0;
+    margin: 10px 0;
     display: inline-block;
   }
   .with-word::before, .with-word::after {
